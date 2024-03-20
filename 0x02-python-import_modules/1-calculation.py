@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from calculator_1 import div, mul, add, sub
 
-
 if __name__ == "__main__":
     b = 5
     a = 10
