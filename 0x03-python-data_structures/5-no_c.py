@@ -4,6 +4,6 @@
 def no_c(my_string):
     string = ""
     for j in my_string:
-        if j is not 'c' and j is not 'C':
+        if j != 'c' and j != 'C':
             string += j
     return string
