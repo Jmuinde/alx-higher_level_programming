@@ -2,10 +2,10 @@
 
 
 def search_replace(my_list, search, replace):
-    updated_list = my_list[:]
-    for j in range(len(updated_list)):
-        if updated_list[j] == search:
-            updated_list[j] = replace
+    new_list = my_list[:]
+    for j in range(len(new_list)):
+        if new_list[j] == search:
+            new_list[j] = replace
         else:
-            updated_list = my_list[:]
-    return (updated_list)
+            new_list = my_list[:]
+    return new_list
