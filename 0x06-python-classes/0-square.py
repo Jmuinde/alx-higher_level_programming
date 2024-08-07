@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" this script outlines an empty clas """
+"""this script outlines an empty clas"""
 
 
 class Square:
-	""" creating an empty class """
+	"""creating an empty class"""
 	pass
