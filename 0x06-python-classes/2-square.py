@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""first bit of creating the class."""
+"""First bit of creating the class."""
 
 
 class Square:
-	"""the square class."""
+	"""The square class."""
+
+
 	def __init__(self, size=0):
 		if type(size) != int:
 			raise TypeError("size must be an integer")
