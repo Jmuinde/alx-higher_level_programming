@@ -1,21 +1,32 @@
 #!/usr/bin/python3
+"""Module that defines a Square class."""
 
 
 class Square:
-    """Set up the class to get
-		the square of a number.
-    """
+    """A class that represents a square."""
+
     def __init__(self, size=0):
-        """Class inizalization.
+        """
+        Initialize the square with a given size.
+
+        Args:
+            size (int): The size of the square's side. Default is 0.
+
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.__size = size
 
     def area(self):
-        """Method to get the square.
+        """
+        Calculate the area of the square.
+
+        Returns:
+            int: The area of the square.
         """
         return self.__size * self.__size
