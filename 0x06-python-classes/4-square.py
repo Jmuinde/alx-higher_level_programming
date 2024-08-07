@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-""" creates class Square """
-
+""" Create the  class."""
 
 class Square:
-    """ Square class"""
+    """ Task 4 class."""
     def __init__(self, size=0):
-        if type(size) != int:
+        if not isinstance(size,int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.__size = size
 
     @property
     def size(self):
@@ -18,12 +16,11 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
     def area(self):
-        return self.__size * self.__size
+        return self.__size ** 2
