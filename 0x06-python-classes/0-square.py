@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""this script outlines an empty clas"""
+""" This scriptoutlines how to set up an empty class"""
 
 
 class Square:
-	"""creating an empty class"""
-	pass
+    """this is an empty class for the first question """
+    pass
