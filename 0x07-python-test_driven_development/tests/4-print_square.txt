@@ -1,0 +1,72 @@
+
+The ``4-print_square.txt`` module
+==================================
+
+Testing it ``print_square``
+-----------------------
+
+Import the function:
+
+    >>> print_square = __import__('4-print_square').print_square
+
+Use cases:
+
+Case when size is positive int:
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+Case when size  is equal to zero:
+
+    >>> print_square(0)
+
+Case when size is a string:
+
+    >>> print_square("John")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Case when size is a float:
+
+    >>> print_square(6.3)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Case when size is a negative int:
+
+    >>> print_square(-5)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+Case when size is a negative float:
+
+    >>> print_square(-5.3)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Case when size is an empty string:
+
+    >>> print_square("")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Case when no argument is provided for size:
+
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
